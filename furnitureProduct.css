@@ -1,0 +1,949 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0px auto 0px auto;
+  padding: 7px 5%;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 11;
+}
+
+   /* Navbar  child */
+
+   /* logo  */
+     
+
+  #navbar>div:nth-child(1){
+  width: 6%;
+  }
+
+  #navbar>div:nth-child(1) img{
+  width: 100%;
+  }
+
+    /* logo-name                              */
+
+#navbar>div:nth-child(2) {
+  width: 15%;
+  margin-left: -120px;
+  font-size: 22px;
+  margin-right: -100px;
+}
+
+/* location         */
+
+#navbar>div:nth-child(3){
+  margin-left: -60px;
+}
+
+#navbar>div:nth-child(3) img{
+  width: 100%;
+}
+
+/* <!-- Location Box section start--> */
+
+#location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 13px;
+  cursor: pointer;
+}
+#location > img {
+  width: 50%;
+  margin: 0px 5px;
+}
+
+/* Search bar      */
+ 
+#navbar>div:nth-child(4){
+border:2px solid rgba(197, 186, 186, 0.281);
+width: 50%;
+margin-left: -40px;
+display: flex;
+background-color: white;
+border-radius: 7px;
+overflow: hidden;
+
+}
+#navbar>div:nth-child(4)>input:nth-child(1){  
+border:2px solid rgb(32, 219, 32);
+width: 100%;
+padding: 10px;
+border-radius: 7px;
+background-color: #f7f7f7;
+color: rgb(12, 12, 12);
+font-size: 16px;
+border-color: white
+
+}
+
+#navbar>div:nth-child(4)>div:nth-child(2){  
+margin-left: -40px;
+align-items: center;
+display: flex;
+justify-content: center;
+width: 28px;
+}
+   
+ #navbar>div:nth-child(4)>div:nth-child(2) img{
+    
+  width: 100%;
+  cursor: pointer ;
+} 
+#navbar>div:nth-child(4)>input:nth-child(1):hover{ 
+background-color: rgb(238, 241, 240);
+ }
+/* cart(logo)                               */
+ 
+#navbar>div:nth-child(5){
+cursor: pointer;
+margin-left: -8%;
+width: 55px;
+}
+
+#navbar > div:nth-child(5) > img {
+  width: 100%;
+}
+
+/* login/signup*/
+
+#navbar>div:nth-child(6)>button{
+border:2px solid rgb(252, 6, 6);
+font-size: 14px;
+border-radius: 8px;
+color: white;
+background-color: #fd0707;
+border: 1px solid #dc3226;
+padding: 10px 15px;
+transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+margin-left: -90px;
+}
+
+#navbar>div:nth-child(6)>button:hover{
+border:2px solid rgb(248, 10, 10);
+background-color: rgb(252, 252, 252);
+border-radius: 10px;
+color: red;
+}
+
+#search{
+  width: 100%;
+}
+
+#cart-link{
+  width: 55px;
+}
+
+#cart-link img{
+  width: 100%;
+}
+
+#header{
+  display: flex;
+  font-size: 15px;
+  font-family: sans-serif;
+  background-color: #ece8e8;
+  padding: 15px 15px;
+  position: fixed;
+  top: 77px;
+  width: 100%;
+}
+
+/* style the list */
+ul.breadcrumb li{
+  display: inline;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: rgb(93, 91, 91);
+  content: " > ";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #737576;
+  text-decoration: none;
+}
+
+
+ul.productLinks li{
+  display: inline;
+  margin-left: 30px;
+}
+.productLinksDiv{
+  margin-left: 600px;
+}
+
+ul.productLinks li a {
+  color: #737576;
+  text-decoration: none;
+}
+
+#container{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin-top: 70px;
+}
+/* style the filter side bar  */
+
+#data-list-wrapper{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin-top: 50px;
+  margin-right: 200px;
+  margin-left: 25px;
+}
+
+#data-list-wrapper img{
+  width: 100%;
+}
+#filter-sideBar{
+  width: 250px;
+  margin-top: 25px;
+  margin-left: 100px;
+}
+#filter-sideBar .filters-text{
+  font-size: 20px;
+  margin-left: 20px;
+  color: #7d7c7c;
+  font-family: sans-serif;
+}
+#filter-sideBar p{
+  font-size: 14px;
+  margin-left: 20px;
+  font-weight: 400;
+  color: #313131;
+  font-family: sans-serif;
+}
+
+#rooms-filter-parent{
+  border: 1px solid rgb(163, 161, 161);
+  margin-top: 20px;
+  margin-left: 20px;
+  line-height: 30px;
+}
+
+#product-type-filter-parent{
+  border: 1px solid rgb(163, 161, 161);
+  margin-top: 20px;
+  margin-left: 20px;
+  line-height: 30px;
+}
+
+#sort{
+  margin-top: 20px;
+  padding: 10px 10px;
+  margin-left: 20px;
+  width: 230px;
+  border:1px solid #737576;
+
+}
+
+#rooms-filter input{
+  margin-left: 20px;
+}
+
+#rooms-filter{
+  font-family: sans-serif;
+  color: #7d7c7c;
+  font-size: small;
+
+}
+
+.product-type-filter input{
+  margin-left: 20px;
+  font-family: sans-serif;
+}
+
+.product-type-filter{
+  font-family: sans-serif;
+  color: #7d7c7c;
+  font-size: small;
+}
+
+.card{
+  line-height: 40px;
+}
+
+#data-list-wrapper .quick-view{
+  display: none;
+  width: 90%;
+  margin: auto;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+#data-list-wrapper > div:hover .quick-view{
+  display: block;
+  color: black;
+  z-index: 1;
+  background-color: white;
+  border: .5px solid gray;
+  font-size: smaller;
+}
+
+#data-list-wrapper .quick-view:focus{
+  color: white;
+  background-color: rgb(49, 47, 47);
+}
+#data-list-wrapper > div:hover p{
+  display: none;
+}
+
+#data-list-wrapper > div:hover{
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#data-list-wrapper .wishlistBtn{
+  display: none;
+  width: 90%;
+  margin: auto;
+  padding: 5px;
+  text-decoration: none;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+#data-list-wrapper > div:hover .wishlistBtn{
+  display: block;
+  color: black;
+  z-index: 1;
+  background-color: white;
+  border: .5px solid gray;
+  font-size: smaller;
+}
+
+.wishlistBtn:focus{
+  color: rgb(249, 246, 246);
+  background-color: rgb(19, 18, 20);
+}
+
+#data-list-wrapper > div:hover h3{
+  display: none;
+}
+
+.card h3{
+  margin-left: 10px;
+}
+
+.card p{
+  margin-left: 10px;
+}
+
+/* login/logout hover links*/
+
+.login-dropdown{
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 150px;
+  right: 70px;
+  padding-left: 20px;
+  font-family: sans-serif;
+}
+
+.login-dropdown a{
+  color: rgb(100, 99, 99);
+  text-decoration: none;
+  display: block; 
+  line-height: 20px;
+}
+
+#login-button:hover .login-dropdown {
+  display: block;
+}
+
+.logout-link{
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.wishlist-link{
+  padding-top: 15px;
+
+}
+
+.fa-heart{
+  margin-right: 10px;
+}
+
+.fa-right-from-bracket{
+  margin-right: 10px;
+
+}
+
+#footer {
+  display: flex;
+  font-family: "Muli";
+  gap: 80px;
+  justify-content: space-between;
+  width: 95%;
+  margin: auto;
+  background-color: #f5f7fa;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+#footer li {
+  width: 100%;
+  list-style: none;
+  margin: 25px;
+}
+
+#footer a {
+  text-decoration: none;
+  color: black;
+}
+
+#footer a:hover {
+  color: rgb(18, 128, 218);
+  text-decoration: underline;
+}
+
+
+#footer ol > div {
+  display: flex;
+  gap: 20px;
+}
+
+#footer > div:nth-child(4) {
+  width: 25%;
+  padding: 1%;
+}
+
+#footer ol button {
+  background-color: transparent;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#footer div div {
+  margin-top: 20px;
+}
+
+#footer div div img {
+width:100% ;
+border-radius: 3px;
+}
+
+#bottom_footer {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.B {
+  display: flex;
+}
+
+.B img {
+  width: 60%;
+  border: 1px solid rgb(168, 167, 167);
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* pagination */
+
+#pagination-card{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-button{
+  font-size: 20px;
+  padding: 12px;
+  margin-left: 5px;
+  background-color: #e5e4e4;
+  border: none;
+  border-radius: 3px;
+}
+
+@media screen and (min-width:600px) and (max-width:1140px){
+  #home_login_button{
+    font-size: medium;
+    padding: 5px;
+  }
+  
+  
+  #navbar > div:nth-child(2){
+    display: none;
+  }
+  #navbar > div:nth-child(3){
+    display: none;
+  }
+  #navbar > div:nth-child(4){
+
+    width: auto;
+  }
+  #navbar > div:nth-child(5){
+    display: none;
+
+  }
+  
+  #navbar > div:nth-child(6) button{
+
+    font-size: small;
+  }
+
+  #header{
+
+    font-size: auto;
+    padding: 15px 15px;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+  }
+  ul.breadcrumb li{
+    display: inline;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: rgb(93, 91, 91);
+    content: " > ";
+  }
+  
+
+  ul.productLinks li{
+    display: inline;
+    margin-left: 10px;
+  }
+  .productLinksDiv{
+    margin-left: auto;
+  }
+  #container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-top: auto;
+  }
+  #data-list-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin-top: 50px;
+    margin-right: 200px;
+    margin-left: 25px;
+  }
+  
+  #data-list-wrapper img{
+    width: 50%;
+  }
+  #filter-sideBar{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  #filter-sideBar .filters-text{
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  #filter-sideBar p{
+    font-size: 12px;
+    margin-left: auto;
+    font-weight: 400;
+  }
+  
+  #rooms-filter-parent{
+    margin-top: 20px;
+    margin-left: 10px;
+    line-height: 20px;
+  }
+  
+  #product-type-filter-parent{
+    margin-top: 20px;
+    margin-left: 10px;
+    line-height: 20px;
+  }
+  
+  #sort{
+    margin-top: 20px;
+    padding: auto;
+    margin-left: 10px;
+    width: 150px;
+    border:1px solid #737576;
+  
+  }
+  
+  #rooms-filter input{
+    margin-left: 10px;
+  }
+  
+  
+  .product-type-filter input{
+    margin-left: 10px;
+  }
+  #product-type-filter{
+    width: auto;
+  }
+  .card{
+    line-height: auto;
+  }
+  
+  #data-list-wrapper .quick-view{
+    display: none;
+    width: 60%;
+    margin: auto;
+    padding: 5px;
+  }
+  .card h3{
+    margin-left: 5px;
+    font-size: 15px;
+  }
+  #data-list-wrapper img{
+    width: 100%;
+  }
+  .card p{
+    margin-left: 5px;
+  }
+  #data-list-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 25px;
+  }
+  #data-list-wrapper .wishlistBtn{
+    display: none;
+    width: 60%;
+    margin: auto;
+    padding: auto;
+  }
+  #footer {
+    display: flex;
+    font-family: "Muli";
+    gap: 40px;
+
+    width: auto;
+    margin: auto;
+
+    padding: 5px;
+    margin-top: 20px;
+  }
+  
+  #footer li {
+    width: 100%;
+    list-style: none;
+    margin: auto;
+  }
+
+  #footer ol > div {
+    display: flex;
+    gap: auto;
+  }
+  
+  #footer > div:nth-child(4) {
+    width: auto;
+    padding: 1%;
+  }
+  
+  #footer ol button {
+    background-color: transparent;
+    font-size: 10px;
+    padding: auto;
+    border-radius: 7px;
+  }
+  
+  #footer div div {
+    margin-top: 20px;
+  }
+  
+  #footer div div img {
+  width:60% ;
+  border-radius: 3px;
+  }
+  
+  #bottom_footer {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+  }
+  
+  .B {
+    display: flex;
+  }
+  
+  .B img {
+    width: 60%;
+    border: 1px solid rgb(168, 167, 167);
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  /* pagination */
+  
+  #pagination-card{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-button{
+    font-size: 20px;
+    padding: 12px;
+    margin-left: 5px;
+    background-color: #e5e4e4;
+    border: none;
+    border-radius: 3px;
+  }
+  #footer ol{
+    width: auto;
+  }
+}
+@media screen and (min-width:100px) and (max-width:599px){
+  #navbar > div:nth-child(2){
+    display: none;
+  }
+  #navbar > div:nth-child(3){
+    display: none;
+  }
+  #navbar > div:nth-child(4){
+    padding: 0px;
+    width: auto;
+  }
+  #navbar > div:nth-child(4) div img{
+    padding: 0px;
+  
+    width: 5px;
+  }
+  #navbar > div:nth-child(5) img{
+   display: none;
+
+  }
+  #navbar > div:nth-child(6) button{
+
+    font-size: small;
+  }
+  #header{
+
+    font-size: auto;
+    padding: 10px 10px;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+  }
+  ul.breadcrumb li{
+    display: inline;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: rgb(93, 91, 91);
+    content: " > ";
+  }
+  
+  ul.productLinks li{
+    display: none;
+  }
+  .productLinksDiv{
+    margin-left: auto;
+  }
+  #container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    margin-top: auto;
+  }
+  #data-list-wrapper{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  #data-list-wrapper img{
+    width: 50%;
+  }
+  #filter-sideBar{
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  #filter-sideBar .filters-text{
+    font-size: 10px;
+    margin-left: 10px;
+  }
+  #filter-sideBar p{
+    font-size: 12px;
+    margin-left: auto;
+    font-weight: 400;
+  }
+  
+  #rooms-filter-parent{
+    margin-top: 20px;
+    margin-left: 10px;
+    line-height: 20px;
+  }
+  
+  #product-type-filter-parent{
+    margin-top: 20px;
+    margin-left: 10px;
+    line-height: 20px;
+  }
+  
+  #sort{
+    margin-top: 20px;
+    padding: auto;
+    margin-left: 10px;
+    width: 150px;
+    border:1px solid #737576;
+  
+  }
+  
+  #rooms-filter input{
+    margin-left: 10px;
+  }
+  
+  
+  .product-type-filter input{
+    margin-left: 10px;
+  }
+  #product-type-filter{
+    width: auto;
+  }
+  .card{
+    line-height: auto;
+  }
+  
+  #data-list-wrapper .quick-view{
+    display: none;
+    width: 60%;
+    margin: auto;
+    padding: 5px;
+  }
+  .card h3{
+    margin-left: 5px;
+    font-size: 15px;
+  }
+  #data-list-wrapper img{
+    width: 100%;
+  }
+  .card p{
+    margin-left: 5px;
+  }
+  #data-list-wrapper{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap: 30px;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-left: 25px;
+  }
+  #data-list-wrapper .wishlistBtn{
+    display: none;
+    width: 60%;
+    margin: auto;
+    padding: auto;
+  }
+  #footer {
+    display: flex;
+    font-family: "Muli";
+    gap: 20px;
+
+    width: auto;
+    margin: auto;
+
+    padding: 5px;
+    margin-top: 20px;
+  }
+  
+  #footer li {
+    width: 100%;
+    list-style: none;
+    margin: auto;
+  }
+
+  #footer ol > div {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #footer > div:nth-child(4) {
+    width: 20%;
+    padding: 1%;
+  }
+  
+  #footer ol button {
+    background-color: transparent;
+    font-size: 10px;
+    padding: auto;
+    border-radius: 7px;
+  }
+  
+  #footer div div {
+    margin-top: 20px;
+  }
+  
+  #footer div div img {
+  width:30px;
+  border-radius: 3px;
+  }
+  
+  #bottom_footer {
+    width: auto;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 0px;
+  }
+  
+  .B {
+    display: flex;
+  }
+  
+  .B img {
+    width: 60%;
+    border: 1px solid rgb(168, 167, 167);
+    border-radius: 50%;
+    padding: 5px;
+  }
+  
+  /* pagination */
+  
+  #pagination-card{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+  }
+  
+  .pagination-button{
+    font-size: 10px;
+    padding: 5px;
+    margin-left: 5px;
+  }
+  #footer ol{
+    width: auto;
+    font-size: smaller;
+  }
+}
