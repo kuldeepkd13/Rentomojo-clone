@@ -18,9 +18,9 @@ logoutLinkElement.addEventListener('click', () => {
 let url3 =`https://projecteliteleasejsonserver.onrender.com/Furniture`
 
 let idEl = document.getElementById("addid");
-let imageEl = document.getElementById("addCategory");
-let priceEl =document.getElementById("addPrice");
-let titleEl = document.getElementById("addTitle");
+// let imageEl = document.getElementById("addCategory");
+// let priceEl =document.getElementById("addPrice");
+// let titleEl = document.getElementById("addTitle");
 let appenddata = document.querySelector(".sales-details")
 
 window.addEventListener("load",()=>{
@@ -33,11 +33,11 @@ let btnEL = document.getElementById("addBtn");
 btnEL.addEventListener("click",(e)=>{
     e.preventDefault()
     let Id = idEl.value;
-    let Image = imageEl.value;
-    let Title = titleEl.value;
-    let Price = priceEl.value;
-    addproduct(Id,Image,Title,Price);
-    alert("Product Added")
+    // let Image = imageEl.value;
+    // let Title = titleEl.value;
+    // let Price = priceEl.value;
+    addproduct(Id);
+    alert("Product Edited")
     fetchData()
 })
 
@@ -69,19 +69,13 @@ function displayData(data){
     `
   });
   appenddata.innerHTML = x;
-  console.log(data.length)
+
 }
 
 
-function  addproduct(Id,Image,Title,Price){
-    fetch(url3,{
-        method : `POST`,
-        body : JSON.stringify({
-            id: Id,
-            img : Image,
-            title: Title,
-            price: Price
-        }),
+function  addproduct(Id){
+    fetch(`${url3}/${Id}`,{
+        method : `DELETE`,
         headers :{
             "content-type" : "application/json"
           }

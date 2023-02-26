@@ -8,6 +8,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+    /* border: 1px solid red; */
     }
     
     .box {
@@ -18,9 +19,13 @@
     box-shadow: 0 0 10px #ccc;
     padding: 20px;
     margin-bottom: 30px;
+    /* border: 1px solid yellow; */
+    display: grid;
+    
     }
     
     .title {
+        /* border: 1px solid red; */
     font-size: 24px;
     font-weight: 600;
     margin-left: 30%;
@@ -28,8 +33,34 @@
     }
     
     .sales-details {
-    font-size: 18px;
-    }
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 20px;
+        /* border: 1px solid rgb(59, 56, 218); */
+      }
+      
+      .cardlist {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 20px;
+      }
+      
+      .cardlist img {
+        max-width: 100%;
+        height: auto;
+      }
+      
+      .carddetails p{
+        font-size: 16px;
+        margin-left: 5px;
+      }
+      .carddetails p:first-child {
+        margin-left: 0;
+        font-weight: 600;
+      }
+
     #form > p {
         font-size: 24px;
         font-weight: 600;

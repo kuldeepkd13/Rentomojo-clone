@@ -37,7 +37,7 @@ btnEL.addEventListener("click",(e)=>{
     let Title = titleEl.value;
     let Price = priceEl.value;
     addproduct(Id,Image,Title,Price);
-    alert("Product Added")
+    alert("Product Edited")
     fetchData()
 })
 
@@ -69,13 +69,13 @@ function displayData(data){
     `
   });
   appenddata.innerHTML = x;
-  console.log(data.length)
+
 }
 
 
 function  addproduct(Id,Image,Title,Price){
-    fetch(url3,{
-        method : `POST`,
+    fetch(`${url3}/${Id}`,{
+        method : `PUT`,
         body : JSON.stringify({
             id: Id,
             img : Image,
