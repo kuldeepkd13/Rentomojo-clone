@@ -16,7 +16,7 @@ function display(data){
         let title = document.createElement("h3")
         let price = document.createElement("p")
         let Buy = document.createElement("button")
-        image.src=element.image;
+        image.src=element.img;
         title.textContent=element.title;
        
         price.innerText = `₹${element.price}`;
