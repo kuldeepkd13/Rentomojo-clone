@@ -58,8 +58,27 @@
         <div><img src="https://storied-mermaid-e7f527.netlify.app/img/cart.png" onclick="window.open('cart.html')"></div>
 
         
-        <div><button id="home_login_button" onclick="show_login_popup()"><a href="login.html">LOGIN </a>
+        <div id="loginn"><button id="login_btn"  onclick="show_login_popup()"><a href="login.html">LOGIN </a>
             <a href="">/ SIGNUP</a></button></div>
+    </div>
+
+    <div id="log">
+        <div>
+            <img src="/image/cat.png" height="300px" width="300px" />
+        </div>
+        <div id="log_2">
+        <div><button id="login_hide_btn">+</button></div>
+        <div>
+             <p>Enter your number to Login</p> 
+            <input type="text" id="mobileNo" placeholder="Enter Your Mobile Number">
+            <div id="otp">
+                <input type="text" id="OtpNo" placeholder="Enter Your OTP">
+            </div>
+        </div>
+        <div>
+            <Button id="loginButton" onclick="alter()">Login</Button>
+        </div>
+    </div>
     </div>
 
  <!-- ------------------------------------------------------------------------------------------------   -->
