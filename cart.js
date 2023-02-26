@@ -23,10 +23,9 @@ function display(data){
          Buy.innerText = "Buy Now"
         
         
-        Buy.addEventListener("click",(e)=>{
-            e.preventDefault();
-            cartArray.push(element)
-            localStorage.setItem("cart",JSON.stringify(cartArray))
+        Buy.addEventListener("click",()=>{
+           
+            window.location.href = "payment.html";
         })
 
         card.append(image,title,price,Buy);
