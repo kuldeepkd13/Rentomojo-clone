@@ -3,7 +3,7 @@ function goToHome(){
     window.location.href="index.html";
 }
 
-let imgArr=["https://s.rmjo.in/Paytm-Bank-Desktop-banner-%20(1).jpg","https://s.rmjo.in/Fitness-offer-banner-for-Web--2.jpg","https://s.rmjo.in/AC-Offer-Banner-Web-.jpg" ]
+let imgArr=["https://s.rmjo.in/Paytm-Bank-Desktop-banner-%20(1).jpg","https://s.rmjo.in/Fitness-offer-banner-for-Web--2.jpg","https://s.rmjo.in/WP-Web.png","https://s.rmjo.in/AC-Offer-Banner-Web-.jpg","https://s.rmjo.in/AC-banner-Web-.jpg" ]
 
 let slidingImg=document.getElementById("sliding_Img");
 
@@ -26,7 +26,7 @@ if(x==imgArr.length){
     x=0;
 }
 
-},2000)
+},1500)
 
 
 
