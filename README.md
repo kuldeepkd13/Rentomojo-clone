@@ -1,3 +1,4 @@
-# BRISK-SMASH-9621
+# Rentomojo Clone
+It is an online rental platform that allows customers to rent furniture, appliances and other household items.
 
-This is the Construct Week group project, which is a clone of the Rentomojo website, a rental platform for furniture. We have created a replica of the platform using a tech stack that includes HTML, CSS, and JavaScript for the user side, and JSON Server, HTML, CSS, and JavaScript for the admin side. We have named our clone EliteLEase to give it a unique identity. The team made the following contributions to the project: Kuldeep Kumar developed the Home Page, Sharun ND developed the Product Page, Shaski Kumari developed the Login and Cart Page, and I developed the JSON Server and built the admin side.
+## To visit our website [click here](https://joyful-valkyrie-7a303c.netlify.app/)
