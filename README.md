@@ -14,12 +14,8 @@ The project has been deployed using the following platforms:
 
 Elite lease is developed using the following technologies:
 
-##Frontend:
- -HTML 
- -CSS
- -JavaScript
-##Backend: 
- -Json Server
+- Frontend: HTML, CSS , JavaScripts 
+- Backend: Json Server
 
 ## Features
 
