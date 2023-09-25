@@ -7,19 +7,19 @@ It is an online rental platform that allows customers to rent furniture, applian
 The project has been deployed using the following platforms:
 
 - Frontend: Netlify
-  - URL: [Survey-monkey-clone](https://joyful-valkyrie-7a303c.netlify.app/)
+  - URL: [Rentomojo-clone](https://joyful-valkyrie-7a303c.netlify.app/)
 
 
 ## Project Overview
 
 Elite lease is developed using the following technologies:
 
-#Frontend:
--HTML 
--CSS
--JavaScript
-#Backend: 
--Json Server
+##Frontend:
+ -HTML 
+ -CSS
+ -JavaScript
+##Backend: 
+ -Json Server
 
 ## Features
 
